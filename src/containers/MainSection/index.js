@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
+		container: {
+			backgroundColor: "#1dd1a1",
+		},
 		[theme.breakpoints.up('xs')]: {
 			container: {
 				display: 'flex',
@@ -30,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 	  text: {
 	  	display: "flex",
 	  	flexDirection: "column",
-	  	color: "#5E52AD",
+	  	color: "#fff",
 	  	margin: '0rem 0 2rem 4rem',
 	  },
 	  deOndeVem: {
@@ -38,19 +41,19 @@ const useStyles = makeStyles((theme) => ({
 	  	fontSize: '3rem',
 	  	lineHeight: 2,
 	  	fontWeight: 300, 
-	  	color: "#5E52AD",
+	  	color: "#fff",
 	  	alignSelf: "flex-start",
 	  }, 
 	  come: {
 	  	fontSize: '3rem',
 	  	fontFamily: "'Roboto', sans-serif",
 	  	fontWeight: 700,
-	  	color: "#5E52AD",
+	  	color: "#fff",
 	  	alignSelf: "flex-start",
 	  },
 	  underline: {
 	  	lineHeight: 2,
-	  	borderBottom: "10px solid #5E52AD",
+	  	borderBottom: "10px solid #fff",
 	  	margin: "0 0 3rem 0",
 	  },
 
@@ -63,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 	  }
 	}));
 
-export default function Content() {
+export default function MainSection() {
 
 	const classes = useStyles();
 
@@ -84,7 +87,7 @@ export default function Content() {
 			</Grid>		
 			<Grid item xs={12} md={6}>
 					<div className={classes.imgContainer}>
-						<img src="./img/home.svg" alt="Image description." className={classes.img}/>
+						<img src="./img/home.svg" alt="Two people eating illustration" className={classes.img}/>
 					</div>
 			</Grid>
 		</div>
