@@ -71,7 +71,7 @@ export default function MainSection() {
 	const classes = useStyles();
 
 	return (
-		<Grid container spacing={2}>
+		<Grid>
 			<div className={classes.container}>
 			<Grid item xs={12} md={6}>
 				<div className={classes.text}>

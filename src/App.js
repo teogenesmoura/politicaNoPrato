@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './containers/NavBar';
 import MainSection from './containers/MainSection';
 import ExplanationSection from './containers/ExplanationSection';
+import Footer from './containers/Footer';
 import theme from './containers/theme';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <MainSection />
       <ExplanationSection theme={theme}/>
+      <Footer />
     </div>  
   );
 }
